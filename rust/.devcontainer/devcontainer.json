@@ -11,13 +11,15 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": null
+		"terminal.integrated.shell.linux": null,
+		"rust-client.channel": "nightly",
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rust-lang.rust",
-		"kalitaalexey.vscode-rust",
+		// "kalitaalexey.vscode-rust",
+		"matklad.rust-analyzer",
 		"bungcip.better-toml",
 		"panicbit.cargo"
 	],

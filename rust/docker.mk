@@ -2,7 +2,7 @@
 
 NAME := docker-contrib-rust
 CUR_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
-WORK_DIR := /app
+WORK_DIR := /workdir
 VOLUMES := $(CUR_DIR):$(WORK_DIR)
 ENVIRONMENT := $(shell grep ^ENVIRONMENT= .env | awk -F= '{ print $$2 }')
 
